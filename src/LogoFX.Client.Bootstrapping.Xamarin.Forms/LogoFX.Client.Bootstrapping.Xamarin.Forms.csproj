@@ -1,0 +1,34 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <Version>2.2.2</Version>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <OutputPath>..\Bin\netstandard\Release</OutputPath>
+    <DocumentationFile>..\Bin\netstandard\Release\LogoFX.Client.Bootstrapping.Xamarin.Forms.xml</DocumentationFile>
+    <EmbedAllSources>True</EmbedAllSources>
+    <DebugType>embedded</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="LogoFX.Client.Bootstrapping.Adapters.Contracts" Version="2.2.2" />
+    <PackageReference Include="Solid.Bootstrapping" Version="2.3.2" />
+    <PackageReference Include="Solid.Common.Core" Version="2.3.2" />
+    <PackageReference Include="Solid.Core" Version="2.3.2" />
+    <PackageReference Include="Solid.Extensibility" Version="2.3.2" />
+    <PackageReference Include="Solid.Practices.Composition.Core" Version="2.3.2" />
+    <PackageReference Include="Solid.Practices.IoC" Version="2.3.2" />
+    <PackageReference Include="Solid.Practices.Middleware" Version="2.3.2" />
+    <PackageReference Include="Solid.Practices.Modularity" Version="2.3.2" />
+    <PackageReference Include="Xamarin.Forms" Version="4.5.0.396" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Caliburn.Micro">
+      <HintPath>..\lib\Caliburn.Micro\netstandard1.0\Caliburn.Micro.dll</HintPath>
+    </Reference>
+    <Reference Include="Caliburn.Micro.Xamarin.Forms">
+      <HintPath>..\lib\Caliburn.Micro.Xamarin.Forms\lib\netstandard1.4\Caliburn.Micro.Xamarin.Forms.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

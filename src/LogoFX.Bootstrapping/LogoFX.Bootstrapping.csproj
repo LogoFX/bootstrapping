@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <Version>2.2.2</Version>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <OutputPath>..\Bin\netstandard\Release</OutputPath>
+    <DocumentationFile>..\Bin\netstandard\Release\LogoFX.Bootstrapping.xml</DocumentationFile>
+    <EmbedAllSources>True</EmbedAllSources>
+    <DebugType>embedded</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OutputPath>bin\Debug</OutputPath>
+    <DebugType>full</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Solid.Bootstrapping" Version="2.3.2" />
+    <PackageReference Include="Solid.Common.Core" Version="2.3.2" />
+    <PackageReference Include="Solid.Core" Version="2.3.2" />
+    <PackageReference Include="Solid.Extensibility" Version="2.3.2" />
+    <PackageReference Include="Solid.Practices.Composition.Core" Version="2.3.2" />
+    <PackageReference Include="Solid.Practices.IoC" Version="2.3.2" />
+    <PackageReference Include="Solid.Practices.Modularity" Version="2.3.2" />
+  </ItemGroup>
+</Project>
