@@ -8,7 +8,7 @@
 
 <img src=https://img.shields.io/nuget/dt/LogoFX.Bootstrapping>
 
-[Living Documentation](https://ci.appveyor.com/api/projects/logofx/bootstrapping/artifacts/src/LogoFX.Boostrapping.Specs/bin/Release/LivingDoc.html)
+[Living Documentation](https://ci.appveyor.com/api/projects/logofx/bootstrapping/artifacts/output/LogoFX.Boostrapping.Specs.LivingDoc.html)
 
 [Get package](https://www.nuget.org/packages/LogoFX.Bootstrapping)
 

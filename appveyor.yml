@@ -22,5 +22,5 @@ artifacts:
 - name: Packages
   path: ./output/*.nupkg
 - name: Boostrapping Living Documentation
-  path: ./src/LogoFX.Bootstrapping.Specs/bin/Release/LivingDoc.html
+  path: ./output/LogoFX.Bootstrapping.Specs.LivingDoc.html
 ...
