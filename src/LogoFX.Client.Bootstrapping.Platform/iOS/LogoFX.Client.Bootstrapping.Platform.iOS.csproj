@@ -67,7 +67,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="LogoFX.Client.Core" Version="2.2.4-rc1" />
+    <PackageReference Include="LogoFX.Client.Core" Version="2.2.4" />
     <PackageReference Include="Solid.Practices.IoC">
       <Version>2.3.2</Version>
     </PackageReference>
