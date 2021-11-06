@@ -21,7 +21,7 @@ namespace LogoFX.Client.Bootstrapping.Xamarin.Forms
             => _instance = containerAdapter;
 
         /// <summary>
-        /// Gets the dependency regsitrator.
+        /// Gets the dependency registrator.
         /// </summary>
         public static IDependencyRegistrator Registrator => (IDependencyRegistrator)_instance;
 
