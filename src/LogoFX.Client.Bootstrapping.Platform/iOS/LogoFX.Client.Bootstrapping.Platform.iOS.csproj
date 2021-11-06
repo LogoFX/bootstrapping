@@ -57,14 +57,17 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\LogoFX.Client.Bootstrapping.Adapters.Contracts\LogoFX.Client.Bootstrapping.Adapters.Contracts.csproj">
+      <Project>{E932C842-4A71-43C0-B2F4-DEF58669BE4A}</Project>
+      <Name>LogoFX.Client.Bootstrapping.Adapters.Contracts</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\LogoFX.Client.Bootstrapping.Xamarin.Forms\LogoFX.Client.Bootstrapping.Xamarin.Forms.csproj">
       <Project>{84B66917-B748-46EA-B2E7-AE59AB3016F8}</Project>
       <Name>LogoFX.Client.Bootstrapping.Xamarin.Forms</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="LogoFX.Client.Bootstrapping.Adapters.Contracts" Version="2.2.3" />      
-    <PackageReference Include="LogoFX.Client.Core" Version="2.2.3" />      
+    <PackageReference Include="LogoFX.Client.Core" Version="2.2.4-rc1" />
     <PackageReference Include="Solid.Practices.IoC">
       <Version>2.3.2</Version>
     </PackageReference>

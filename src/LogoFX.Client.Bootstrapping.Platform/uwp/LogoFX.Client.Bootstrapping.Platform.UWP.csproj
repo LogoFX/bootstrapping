@@ -159,11 +159,11 @@
     <EmbeddedResource Include="Properties\LogoFX.Client.Bootstrapping.Platform.UWP.rd.xml" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="LogoFX.Bootstrapping" Version="2.2.3" />
-    <PackageReference Include="LogoFX.Client.Bootstrapping.Adapters.Contracts" Version="2.2.3" />
-    <PackageReference Include="LogoFX.Client.Core" Version="2.2.3" />
-    <PackageReference Include="LogoFX.Client.Core.Core" Version="2.2.3" />
-    <PackageReference Include="LogoFX.Core" Version="2.2.3" />
+    <PackageReference Include="LogoFX.Bootstrapping" Version="2.2.4-rc1" />
+    <PackageReference Include="LogoFX.Client.Bootstrapping.Adapters.Contracts" Version="2.2.4-rc1" />
+    <PackageReference Include="LogoFX.Client.Core" Version="2.2.4-rc1" />
+    <PackageReference Include="LogoFX.Client.Core.Core" Version="2.2.4-rc1" />
+    <PackageReference Include="LogoFX.Core" Version="2.2.4-rc1" />
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
       <Version>6.2.12</Version>
     </PackageReference>
