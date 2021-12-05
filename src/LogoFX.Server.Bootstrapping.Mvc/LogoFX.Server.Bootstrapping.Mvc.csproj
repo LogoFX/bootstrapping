@@ -2,7 +2,7 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
-    <Version>2.2.4</Version>
+    <Version>2.2.5</Version>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
     <OutputPath>..\Bin\netstandard\Release</OutputPath>
@@ -18,8 +18,8 @@
     <PackageReference Include="Microsoft.AspNetCore.Mvc.ApiExplorer" Version="2.2.0" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="3.1.3" />
-    <PackageReference Include="Solid.Bootstrapping" Version="2.3.2" />
-    <PackageReference Include="Solid.Practices.Composition.Core" Version="2.3.2" />
-    <PackageReference Include="Solid.Practices.Middleware" Version="2.3.2" />
+    <PackageReference Include="Solid.Bootstrapping" Version="2.3.3" />
+    <PackageReference Include="Solid.Practices.Composition.Core" Version="2.3.3" />
+    <PackageReference Include="Solid.Practices.Middleware" Version="2.3.3" />
   </ItemGroup>
 </Project>
