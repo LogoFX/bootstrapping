@@ -21,6 +21,6 @@ image: Visual Studio 2022
 artifacts:
 - name: Packages
   path: ./output/*.nupkg
-- name: Boostrapping Living Documentation
+- name: Bootstrapping Living Documentation
   path: ./output/LogoFX.Bootstrapping.Specs.LivingDoc.html
 ...
