@@ -12,8 +12,7 @@
     <iconUrl>https://github.com/LogoFX/logofx-assets/blob/master/icons/icon.png?raw=true</iconUrl>
     <description>LogoFX Server Bootstrapping containing implementation for basic server bootstrapper functionality. This bootstrapper supports modularity and composition at the server side.</description>
     <summary>LogoFX Server Bootstrapping containing implementation for basic server bootstrapper functionality. This bootstrapper supports modularity and composition at the server side.</summary>
-    <releaseNotes>
-    </releaseNotes>
+	<releaseNotes>Added IoC abstractions.</releaseNotes>
     <dependencies>
       <dependency id="Solid.Bootstrapping" version="2.3.3" />
       <dependency id="Solid.Extensibility" version="2.3.3" />
