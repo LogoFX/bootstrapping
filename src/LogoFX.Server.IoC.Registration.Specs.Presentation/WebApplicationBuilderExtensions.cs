@@ -9,10 +9,10 @@ internal static class WebApplicationBuilderExtensions
     {
         webApplicationBuilder.Services.AddControllers();
         var bootstrapper = new Bootstrapper(webApplicationBuilder.Services);
-        bootstrapper
-            .Use(new RegisterCustomCompositionModulesMiddleware<BootstrapperBase,
-                IServiceCollection>())
-            .Use(new Bootstrapping.UseDefaultRegistrationMethodMiddleware<IHaveRegistrator<IServiceCollection>>());
+        bootstrapper.Use(new Bootstrapping.UseDefaultRegistrationMethodMiddleware<IHaveRegistrator<IServiceCollection>>());
+        bootstrapper.Use(new RegisterCustomCompositionModulesMiddleware<BootstrapperBase,
+                IServiceCollection>());
+        bootstrapper.Use(new AddServicesMiddleware<BootstrapperBase>());
         bootstrapper.Initialize();
         return webApplicationBuilder;
     }
