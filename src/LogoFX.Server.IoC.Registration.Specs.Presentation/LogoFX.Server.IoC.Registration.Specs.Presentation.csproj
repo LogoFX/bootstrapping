@@ -10,4 +10,10 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\LogoFX.Server.Bootstrapping\LogoFX.Server.Bootstrapping.csproj" />
+    <ProjectReference Include="..\LogoFX.Server.IoC.Registration.Specs.Application\LogoFX.Server.IoC.Registration.Specs.Application.csproj" />
+    <ProjectReference Include="..\LogoFX.Server.IoC.Registration.Specs.Domain\LogoFX.Server.IoC.Registration.Specs.Domain.csproj" />
+  </ItemGroup>
+
 </Project>

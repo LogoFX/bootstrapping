@@ -1,4 +1,6 @@
-namespace LogoFX.Server.IoC.Registration.Specs.Presentation
+using System;
+
+namespace LogoFX.Server.IoC.Registration.Specs.Domain
 {
     public class WeatherForecast
     {
@@ -8,6 +10,6 @@ namespace LogoFX.Server.IoC.Registration.Specs.Presentation
 
         public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
 
-        public string? Summary { get; set; }
+        public string Summary { get; set; }
     }
 }
