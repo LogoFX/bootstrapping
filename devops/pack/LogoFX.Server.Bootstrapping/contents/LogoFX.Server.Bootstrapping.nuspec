@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
   <metadata>
     <id>LogoFX.Server.Bootstrapping</id>
-    <version>2.2.5</version>
+    <version>2.2.6-rc1</version>
     <title>LogoFX.Server.Bootstrapping</title>
     <authors>Gennady Verdel</authors>
     <owners>Gennady Verdel</owners>
@@ -12,7 +12,7 @@
     <iconUrl>https://github.com/LogoFX/logofx-assets/blob/master/icons/icon.png?raw=true</iconUrl>
     <description>LogoFX Server Bootstrapping containing implementation for basic server bootstrapper functionality. This bootstrapper supports modularity and composition at the server side.</description>
     <summary>LogoFX Server Bootstrapping containing implementation for basic server bootstrapper functionality. This bootstrapper supports modularity and composition at the server side.</summary>
-	<releaseNotes>Added IoC abstractions.</releaseNotes>
+    <releaseNotes>Added IoC abstractions.</releaseNotes>
     <dependencies>
       <dependency id="Solid.Bootstrapping" version="2.3.3" />
       <dependency id="Solid.Extensibility" version="2.3.3" />
