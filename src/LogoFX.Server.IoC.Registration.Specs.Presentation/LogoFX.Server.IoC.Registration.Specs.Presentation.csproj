@@ -14,6 +14,7 @@
     <ProjectReference Include="..\LogoFX.Server.Bootstrapping\LogoFX.Server.Bootstrapping.csproj" />
     <ProjectReference Include="..\LogoFX.Server.IoC.Registration.Specs.Application\LogoFX.Server.IoC.Registration.Specs.Application.csproj" />
     <ProjectReference Include="..\LogoFX.Server.IoC.Registration.Specs.Domain\LogoFX.Server.IoC.Registration.Specs.Domain.csproj" />
+    <ProjectReference Include="..\LogoFX.Server.IoC.Registration\LogoFX.Server.IoC.Registration.csproj" />
   </ItemGroup>
 
 </Project>
