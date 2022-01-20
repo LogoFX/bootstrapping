@@ -39,7 +39,7 @@ public static class WebApplicationBuilderExtensions
         var bootstrapper =
             ObjectFactory.CreateObject<TBootstrapper, IServiceCollection>(webApplicationBuilder.Services);
         bootstrapper.Use(
-            new LogoFX.Server.Bootstrapping.UseDefaultRegistrationMethodMiddleware<
+            new UseDefaultRegistrationMethodMiddleware<
                 IHaveRegistrator<IServiceCollection>>());
         bootstrapper.Use(new RegisterCustomCompositionModulesMiddleware<BootstrapperBase,
             IServiceCollection>());
