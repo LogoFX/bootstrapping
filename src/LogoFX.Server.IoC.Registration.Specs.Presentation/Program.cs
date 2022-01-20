@@ -1,12 +1,8 @@
 using System.Reflection;
+using LogoFX.Server.Bootstrapping;
 
-Assembly.GetCallingAssembly().SetWorkingDir();
+var currentAssembly = Assembly.GetExecutingAssembly();
+currentAssembly.SetWorkingDir();
 
 var builder = WebApplication.CreateBuilder(args);
-
-builder
-    .AddServices()
-    .ConfigureApi()
-    .Build()
-    .ConfigureHttpRequestPipeline()
-    .Run();    
+builder.ExecuteDefaultSetup<Bootstrapper>(currentAssembly);
