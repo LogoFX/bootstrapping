@@ -14,7 +14,7 @@
     <summary>LogoFX Client Bootstrapping Adapter for Unity Container containing an adapter for the Unity Container which is compatible with Caliburn.Micro.</summary>
     <releaseNotes>Added support for injecting unity container instance.</releaseNotes>
     <dependencies>
-      <dependency id="Solid.Practices.IoC" version="2.3.3" />
+      <dependency id="Solid.Practices.IoC" version="2.3.4" />
       <dependency id="LogoFX.Client.Bootstrapping.Adapters.Contracts" version="2.2.6-rc1" />
       <dependency id="Unity" version="5.11.10" />
     </dependencies>

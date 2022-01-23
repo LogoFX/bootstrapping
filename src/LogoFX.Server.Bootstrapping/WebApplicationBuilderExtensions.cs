@@ -11,8 +11,17 @@ using Solid.Practices.Composition;
 
 namespace LogoFX.Server.Bootstrapping;
 
+/// <summary>
+///     Extension methods for <see cref="WebApplicationBuilder" />.
+/// </summary>
 public static class WebApplicationBuilderExtensions
 {
+    /// <summary>
+    ///     Applies default setup onto the provided web application builder, and runs the built web application.
+    /// </summary>
+    /// <typeparam name="TBootstrapper">The type of the bootstrapper.</typeparam>
+    /// <param name="webApplicationBuilder">The web application builder.</param>
+    /// <param name="assembly">The assembly to be used for the configuration.</param>
     public static void ExecuteDefaultSetup<TBootstrapper>(
         this WebApplicationBuilder webApplicationBuilder,
         Assembly assembly)
@@ -20,7 +29,7 @@ public static class WebApplicationBuilderExtensions
         IInitializable
     {
         webApplicationBuilder
-            .UseDefaultAssemblyLoader()
+            .UseRuntimeAssemblyLoader()
             .AddServices<TBootstrapper>()
             .UseAssemblyConfiguration(assembly)
             .ConfigureApi()
@@ -29,6 +38,13 @@ public static class WebApplicationBuilderExtensions
             .Run();
     }
 
+    /// <summary>
+    /// Adds different services: controllers, DDD services, composition modules. etc.
+    /// </summary>
+    /// <typeparam name="TBootstrapper">The type of the bootstrapper.</typeparam>
+    /// <param name="webApplicationBuilder">The web application builder.</param>
+    /// <param name="bootstrapperOptions">Optional bootstrapper invocation enhancements.</param>
+    /// <returns></returns>
     public static WebApplicationBuilder AddServices<TBootstrapper>(
         this WebApplicationBuilder webApplicationBuilder,
         Func<TBootstrapper, TBootstrapper>? bootstrapperOptions = default)
@@ -49,6 +65,11 @@ public static class WebApplicationBuilderExtensions
         return webApplicationBuilder;
     }
 
+    /// <summary>
+    /// Configures API endpoints to ensure discoverability and OpenAPI compatibility.
+    /// </summary>
+    /// <param name="webApplicationBuilder"></param>
+    /// <returns></returns>
     public static WebApplicationBuilder ConfigureApi(this WebApplicationBuilder webApplicationBuilder)
     {
         // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
@@ -58,12 +79,23 @@ public static class WebApplicationBuilderExtensions
         return webApplicationBuilder;
     }
 
-    public static WebApplicationBuilder UseDefaultAssemblyLoader(this WebApplicationBuilder serviceCollection)
+    /// <summary>
+    /// Sets <see cref="RuntimeAssemblyLoader"/> as the default assembly loader.
+    /// </summary>
+    /// <param name="webApplicationBuilder">The web application builder.</param>
+    /// <returns></returns>
+    public static WebApplicationBuilder UseRuntimeAssemblyLoader(this WebApplicationBuilder webApplicationBuilder)
     {
-        AssemblyLoader.LoadAssembliesFromPaths = DefaultAssemblyLoader.Get;
-        return serviceCollection;
+        AssemblyLoader.LoadAssembliesFromPaths = RuntimeAssemblyLoader.Get;
+        return webApplicationBuilder;
     }
 
+    /// <summary>
+    /// Loads configuration from the specified assembly.
+    /// </summary>
+    /// <param name="webApplicationBuilder">The web application builder.</param>
+    /// <param name="assembly">The specified assembly.</param>
+    /// <returns></returns>
     public static WebApplicationBuilder UseAssemblyConfiguration(
         this WebApplicationBuilder webApplicationBuilder,
         Assembly assembly)

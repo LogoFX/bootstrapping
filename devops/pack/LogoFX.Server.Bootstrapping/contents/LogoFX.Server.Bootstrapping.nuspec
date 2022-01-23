@@ -15,13 +15,13 @@
     <releaseNotes>Added IoC abstractions.</releaseNotes>
     <dependencies>
       <group targetFramework="net6.0">
-        <dependency id="Solid.Bootstrapping" version="2.3.3" />
-        <dependency id="Solid.Extensibility" version="2.3.3" />
-        <dependency id="Solid.Common.Core" version="2.3.3" />
-        <dependency id="Solid.IoC.Registration" version="2.3.3" />
-        <dependency id="Solid.Practices.Composition.Core" version="2.3.3" />
-        <dependency id="Solid.Practices.Modularity" version="2.3.3" />
-        <dependency id="Solid.Practices.Middleware" version="2.3.3" />
+        <dependency id="Solid.Bootstrapping" version="2.3.4" />
+        <dependency id="Solid.Extensibility" version="2.3.4" />
+        <dependency id="Solid.Common.Core" version="2.3.4" />
+        <dependency id="Solid.IoC.Registration" version="2.3.4" />
+        <dependency id="Solid.Practices.Composition.Core" version="2.3.4" />
+        <dependency id="Solid.Practices.Modularity" version="2.3.4" />
+        <dependency id="Solid.Practices.Middleware" version="2.3.4" />
         <dependency id="Microsoft.Extensions.DependencyInjection.Abstractions" version="3.1.3" />
         <dependency id="Swashbuckle.AspNetCore.Swagger" version="6.2.3" />
         <dependency id="Swashbuckle.AspNetCore.SwaggerGen" version="6.2.3" />
