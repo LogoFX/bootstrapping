@@ -17,8 +17,5 @@ mkdir netcoreapp3.1
 robocopy ../../../../../src/Bin/netcore/Release netcoreapp3.1 LogoFX.Client.Bootstrapping.Platform.* /E
 robocopy ../../../../../src/Bin/netcore/Release netcoreapp3.1 Caliburn.Micro.* /E
 robocopy ../../../../../src/Bin/netcore/Release netcoreapp3.1 System.Windows.Interactivity.dll /E
-mkdir uap10.0
-robocopy ../../../../../src/Bin/uwp/Release uap10.0 LogoFX.Client.Bootstrapping.Platform.* /E
-robocopy ../../../../../src/Bin/uwp/Release uap10.0 Caliburn.Micro.* /E
 cd ../../
 nuget pack contents/LogoFX.Client.Bootstrapping.nuspec -OutputDirectory ../../../output

@@ -2,15 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
-using Caliburn.Micro;
-#if NET || NETCORE || NETFRAMEWORK
 using System.Windows;
-#else
-using Windows.UI.Xaml;
-#endif
-#if !WINDOWS_UWP && !NET && !NETCORE && !NETFRAMEWORK
 using Caliburn.Micro;
-#endif
 
 namespace LogoFX.Client.Bootstrapping
 {

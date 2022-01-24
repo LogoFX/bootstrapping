@@ -5,10 +5,6 @@ using LogoFX.Bootstrapping;
 #if (NET || NETCORE || NETFRAMEWORK) && !TEST
 using System.Windows;
 #endif
-#if !TEST && (NETFX_CORE || WINDOWS_UWP)
-using Windows.ApplicationModel;
-using Windows.ApplicationModel.Activation;
-#endif
 using LogoFX.Client.Bootstrapping.Adapters.Contracts;
 using Solid.Bootstrapping;
 using Solid.Extensibility;
@@ -287,67 +283,11 @@ namespace LogoFX.Client.Bootstrapping
             RaiseInitializationCompleted();            
         }
 #endif
-#if (NETFX_CORE || WINDOWS_UWP) && !TEST
-
-        /// <summary>
-        /// Override this method to inject custom functionality before the app is launched.
-        /// </summary>
-        /// <param name="e">The <see cref="LaunchActivatedEventArgs"/> instance containing the event data.</param>
-        protected virtual void BeforeOnLaunched(LaunchActivatedEventArgs e)
-        {
-            
-        }
-
-        /// <summary>
-        /// Override this method to inject custom launch activation arguments checking logic.
-        /// </summary>
-        /// <param name="e">The <see cref="LaunchActivatedEventArgs"/> instance containing the event data.</param>
-        /// <returns></returns>
-        protected virtual bool CheckLaunchActivationArguments(LaunchActivatedEventArgs e)
-        {
-            return e.PreviousExecutionState != ApplicationExecutionState.Running;
-        }
-        
-        /// <param name="e">Details about the launch request and process.</param>
-        protected override void OnLaunched(LaunchActivatedEventArgs e)
-        {
-            var canLaunch = CheckLaunchActivationArguments(e);
-            if (canLaunch == false)
-            {
-                return;
-            }                            
-            OnLaunchedCore();
-            BeforeOnLaunched(e);
-            RaiseInitializationCompleted();                   
-        }
-
-        private void OnLaunchedCore()
-        {
-            InitializeDispatcher();                   
-        }
-#endif
 
 #if !TEST
         internal void DisplayRootViewForInternal(Type rootObjectType)
         {
             DisplayRootViewFor(rootObjectType);
-        }
-#endif
-
-#if (NETFX_CORE || WINDOWS_UWP) && !TEST
-        ///<summary>
-        /// Invoked when application execution is being suspended.  Application state is saved
-        /// without knowing whether the application will be terminated or resumed with the contents
-        /// of memory still intact.
-        /// </summary>
-
-        /// <param name="sender">The source of the suspend request.</param>
-        /// <param name="e">Details about the suspend request.</param>
-        protected override void OnSuspending(object sender, SuspendingEventArgs e)
-        {
-            var deferral = e.SuspendingOperation.GetDeferral();
-            //TODO: Save application state and stop any background activity
-            deferral.Complete();
         }
 #endif
 
@@ -358,9 +298,7 @@ namespace LogoFX.Client.Bootstrapping
         {
             base.Configure();                                                                   
             InitializeAdapter(ContainerAdapter);
-#if (NET || NETCORE || NETFRAMEWORK) // in UWP the dispatcher is initialized later.
             InitializeDispatcher();
-#endif
             MiddlewareApplier.ApplyMiddlewares(this, _registratorMiddlewaresWrapper.Middlewares);
             MiddlewareApplier.ApplyMiddlewares(this, _middlewaresWrapper.Middlewares);
             MiddlewareApplier.ApplyMiddlewares(this, _concreteMiddlewaresWrapper.Middlewares);
