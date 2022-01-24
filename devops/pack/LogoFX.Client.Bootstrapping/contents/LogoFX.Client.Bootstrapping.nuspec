@@ -24,11 +24,11 @@
         <dependency id="Solid.Practices.Modularity" version="2.3.4" />
         <dependency id="Solid.Practices.Middleware" version="2.3.4" />
         <dependency id="Solid.Bootstrapping" version="2.3.4" />
-        <dependency id="LogoFX.Core" version="2.2.5" />
+        <dependency id="LogoFX.Core" version="2.2.6-rc1" />
         <dependency id="LogoFX.Bootstrapping" version="2.2.6-rc1" />
         <dependency id="LogoFX.Client.Bootstrapping.Adapters.Contracts" version="2.2.6-rc1" />
         <dependency id="LogoFX.Client.Bootstrapping.Core" version="2.2.6-rc1" />
-        <dependency id="LogoFX.Client.Core" version="2.2.5" />
+        <dependency id="LogoFX.Client.Core" version="2.2.6-rc1" />
       </group>
       <group targetFramework="UAP10.0">
         <dependency id="Solid.IoC.Registration" version="2.3.4" />
@@ -40,11 +40,11 @@
         <dependency id="Solid.Practices.Middleware" version="2.3.4" />
         <dependency id="Solid.Bootstrapping" version="2.3.4" />
         <dependency id="Solid.Common" version="2.3.4" />
-        <dependency id="LogoFX.Core" version="2.2.5" />
+        <dependency id="LogoFX.Core" version="2.2.6-rc1" />
         <dependency id="LogoFX.Bootstrapping" version="2.2.6-rc1" />
         <dependency id="LogoFX.Client.Bootstrapping.Adapters.Contracts" version="2.2.6-rc1" />
         <dependency id="LogoFX.Client.Bootstrapping.Core" version="2.2.6-rc1" />
-        <dependency id="LogoFX.Client.Core" version="2.2.5" />
+        <dependency id="LogoFX.Client.Core" version="2.2.6-rc1" />
       </group>
       <group targetFramework=".NETCoreApp3.1">
         <dependency id="Solid.IoC.Registration" version="2.3.4" />
@@ -55,11 +55,11 @@
         <dependency id="Solid.Practices.Modularity" version="2.3.4" />
         <dependency id="Solid.Practices.Middleware" version="2.3.4" />
         <dependency id="Solid.Bootstrapping" version="2.3.4" />
-        <dependency id="LogoFX.Core" version="2.2.5" />
+        <dependency id="LogoFX.Core" version="2.2.6-rc1" />
         <dependency id="LogoFX.Bootstrapping" version="2.2.6-rc1" />
         <dependency id="LogoFX.Client.Bootstrapping.Adapters.Contracts" version="2.2.6-rc1" />
         <dependency id="LogoFX.Client.Bootstrapping.Core" version="2.2.6-rc1" />
-        <dependency id="LogoFX.Client.Core" version="2.2.5" />
+        <dependency id="LogoFX.Client.Core" version="2.2.6-rc1" />
       </group>
       <group targetFramework="net5.0">
         <dependency id="Solid.IoC.Registration" version="2.3.4" />
@@ -70,11 +70,11 @@
         <dependency id="Solid.Practices.Modularity" version="2.3.4" />
         <dependency id="Solid.Practices.Middleware" version="2.3.4" />
         <dependency id="Solid.Bootstrapping" version="2.3.4" />
-        <dependency id="LogoFX.Core" version="2.2.5" />
+        <dependency id="LogoFX.Core" version="2.2.6-rc1" />
         <dependency id="LogoFX.Bootstrapping" version="2.2.6-rc1" />
         <dependency id="LogoFX.Client.Bootstrapping.Adapters.Contracts" version="2.2.6-rc1" />
         <dependency id="LogoFX.Client.Bootstrapping.Core" version="2.2.6-rc1" />
-        <dependency id="LogoFX.Client.Core" version="2.2.5" />
+        <dependency id="LogoFX.Client.Core" version="2.2.6-rc1" />
       </group>
     </dependencies>
     <tags>framework logofx dotnet</tags>

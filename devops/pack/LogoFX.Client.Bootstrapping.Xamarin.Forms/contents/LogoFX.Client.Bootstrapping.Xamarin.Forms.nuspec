@@ -29,10 +29,10 @@
         <dependency id="LogoFX.Client.Bootstrapping.Adapters.Contracts" version="2.2.6-rc1" />
       </group>
       <group targetFramework="MonoAndroid4.0.3">
-        <dependency id="LogoFX.Client.Core" version="2.2.5" />
+        <dependency id="LogoFX.Client.Core" version="2.2.6-rc1" />
       </group>
       <group targetFramework="Xamarin.iOS1.0">
-        <dependency id="LogoFX.Client.Core" version="2.2.5" />
+        <dependency id="LogoFX.Client.Core" version="2.2.6-rc1" />
       </group>
     </dependencies>
     <tags>framework logofx dotnet</tags>
