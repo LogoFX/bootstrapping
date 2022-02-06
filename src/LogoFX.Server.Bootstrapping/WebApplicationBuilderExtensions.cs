@@ -58,8 +58,10 @@ public static class WebApplicationBuilderExtensions
             new UseDefaultRegistrationMethodMiddleware<
                 IHaveRegistrator<IServiceCollection>>());
         bootstrapper.Use(new RegisterCustomCompositionModulesMiddleware<BootstrapperBase,
-            IServiceCollection>());
-        bootstrapper.Use(new AddServicesMiddleware<BootstrapperBase>());
+            IServiceCollection>())
+            .Use(new AddServicesMiddleware<BootstrapperBase>())
+            .Use(new AddInteractorsMiddleware<BootstrapperBase>())
+            .Use(new AddRepositoriesMiddleware<BootstrapperBase>());
         bootstrapperOptions?.Invoke(bootstrapper);
         bootstrapper.Initialize();
         return webApplicationBuilder;
