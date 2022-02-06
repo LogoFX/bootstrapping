@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
+  <metadata>
+    <id>LogoFX.Server.IoC.Abstractions</id>
+    <version>2.2.6-rc1</version>
+    <title>LogoFX.Server.IoC.Abstractions</title>
+    <authors>Gennady Verdel</authors>
+    <owners>Gennady Verdel</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>https://github.com/LogoFX/bootstrapping/blob/main/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/LogoFX/bootstrapping</projectUrl>
+    <iconUrl>https://github.com/LogoFX/logofx-assets/blob/master/icons/icon.png?raw=true</iconUrl>
+    <description>LogoFX Bootstrapping IoC Abstractions containing asbtractions for the most common use cases (interactor, repository, etc.).</description>
+    <summary>LogoFX Bootstrapping IoC Abstractions containing asbtractions for the most common use cases (interactor, repository, etc.)</summary>
+    <releaseNotes>
+    </releaseNotes>
+    <dependencies>
+    </dependencies>
+    <tags>framework logofx dotnet</tags>
+    <repository type="Open Source" url="https://github.com/LogoFX/bootstrapping" />
+  </metadata>
+</package>
