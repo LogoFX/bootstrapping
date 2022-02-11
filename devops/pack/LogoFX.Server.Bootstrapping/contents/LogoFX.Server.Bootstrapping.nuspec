@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
   <metadata>
     <id>LogoFX.Server.Bootstrapping</id>
-    <version>2.2.6-rc1</version>
+    <version>2.2.6-rc2</version>
     <title>LogoFX.Server.Bootstrapping</title>
     <authors>Gennady Verdel</authors>
     <owners>Gennady Verdel</owners>
@@ -26,7 +26,7 @@
         <dependency id="Swashbuckle.AspNetCore.Swagger" version="6.2.3" />
         <dependency id="Swashbuckle.AspNetCore.SwaggerGen" version="6.2.3" />
         <dependency id="Swashbuckle.AspNetCore.SwaggerUI" version="6.2.3" />  
-        <dependency id="LogoFX.Server.IoC.Abstractions" version="2.2.6-rc1" />
+        <dependency id="LogoFX.Server.IoC.Abstractions" version="2.2.6-rc2" />
       </group>
     </dependencies>
     <tags>framework logofx dotnet</tags>
