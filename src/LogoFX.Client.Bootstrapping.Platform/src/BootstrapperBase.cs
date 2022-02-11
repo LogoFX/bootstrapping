@@ -46,9 +46,7 @@ namespace LogoFX.Client.Bootstrapping
 
             ()
             :this(new BootstrapperCreationOptions())
-        {
-            
-        }
+        {}
 #if TEST
         /// <summary>
         /// Initializes a new instance of the 
