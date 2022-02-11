@@ -2,7 +2,7 @@
 
 namespace LogoFX.Server.IoC.Registration.Specs.Domain
 {
-    public interface IWeatherService
+    public interface IWeatherRepository
     {
         IEnumerable<WeatherForecast> GetForecasts();
     }

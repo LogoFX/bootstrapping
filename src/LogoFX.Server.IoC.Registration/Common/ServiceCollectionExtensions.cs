@@ -17,5 +17,17 @@ namespace LogoFX.Server.IoC.Registration
                 assembliesCollection => assembliesCollection.FindTypesByEnding(ending),
                 RegistrationMethodContext.GetDefaultRegistrationMethod<IServiceCollection>());
         }
+
+        private static IServiceCollection AddServices
+        (this IServiceCollection serviceCollection,
+            IEnumerable<Assembly> assemblies,
+            string ending)
+        {
+            return serviceCollection.RegisterImplementations(assemblies,
+                assembliesCollection => assembliesCollection.FindTypesByEnding(ending),
+                (dr, type) => 
+                RegistrationMethodContext.GetDefaultRegistrationMethod<IServiceCollection>()
+                .Invoke(dr, new TypeMatch(type, type)));
+        }
     }
 }

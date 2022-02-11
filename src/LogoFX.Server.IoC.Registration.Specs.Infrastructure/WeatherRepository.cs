@@ -5,14 +5,14 @@ using LogoFX.Server.IoC.Registration.Specs.Domain;
 
 namespace LogoFX.Server.IoC.Registration.Specs.Application
 {
-    public class WeatherService : IWeatherService
+    public class WeatherRepository : IWeatherRepository
     {
         private static readonly string[] Summaries =
         {
             "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
         };
 
-        IEnumerable<WeatherForecast> IWeatherService.GetForecasts()
+        IEnumerable<WeatherForecast> IWeatherRepository.GetForecasts()
         {
             return Enumerable.Range(1, 5).Select(index => new WeatherForecast
                 {

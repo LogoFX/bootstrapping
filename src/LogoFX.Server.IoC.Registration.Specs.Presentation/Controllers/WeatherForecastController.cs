@@ -1,3 +1,4 @@
+using LogoFX.Server.IoC.Registration.Specs.Application.Queries.GetForecasts;
 using LogoFX.Server.IoC.Registration.Specs.Domain;
 using Microsoft.AspNetCore.Mvc;
 
@@ -7,16 +8,10 @@ namespace LogoFX.Server.IoC.Registration.Specs.Presentation.Controllers;
 [Route("[controller]")]
 public class WeatherForecastController : ControllerBase
 {
-    private readonly IWeatherService _weatherService;
-
-    public WeatherForecastController(IWeatherService weatherService)
-    {
-        _weatherService = weatherService;
-    }
-
     [HttpGet(Name = "GetWeatherForecast")]
-    public IEnumerable<WeatherForecast> Get()
+    public async Task<IEnumerable<WeatherForecastDto>> Get(
+        [FromServices] GetForecastsInteractor getForecastsInteractor)
     {
-        return _weatherService.GetForecasts();
+        return await getForecastsInteractor.ExecuteAsync();
     }
 }
