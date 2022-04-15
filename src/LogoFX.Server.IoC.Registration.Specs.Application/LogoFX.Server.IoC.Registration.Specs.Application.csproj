@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="JetBrains.Annotations" Version="2021.3.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="6.0.0" />
+    <PackageReference Include="Solid.IoC.Registration" Version="2.3.5" />
+    <PackageReference Include="Solid.Practices.Modularity" Version="2.3.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\LogoFX.Server.IoC.Abstractions\LogoFX.Server.IoC.Abstractions.csproj" />
+    <ProjectReference Include="..\LogoFX.Server.IoC.Registration.Specs.Domain\LogoFX.Server.IoC.Registration.Specs.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

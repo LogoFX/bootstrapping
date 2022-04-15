@@ -1,6 +1,3 @@
-#if !TEST && (WINDOWS_UWP || NETFX_CORE)
-using Caliburn.Micro;
-#endif
 using System;
 using LogoFX.Bootstrapping;
 using Solid.Core;
@@ -23,14 +20,7 @@ namespace LogoFX.Client.Bootstrapping
 #if TEST
         IntegrationTestBootstrapperBase
 #else
-#if NET || NETCORE || NETFRAMEWORK
         Caliburn.Micro.BootstrapperBase
-#else
-#if WINDOWS_UWP || NETFX_CORE
-        CaliburnApplication
-#else
-#endif
-#endif
 #endif
         , IBootstrapper
     {
@@ -56,9 +46,7 @@ namespace LogoFX.Client.Bootstrapping
 
             ()
             :this(new BootstrapperCreationOptions())
-        {
-            
-        }
+        {}
 #if TEST
         /// <summary>
         /// Initializes a new instance of the 
@@ -88,13 +76,7 @@ namespace LogoFX.Client.Bootstrapping
             _creationOptions = creationOptions;
             if (creationOptions.UseCompositionModules || creationOptions.DiscoverAssemblies)
             {
-               Solid.Common.PlatformProvider.Current = new
-#if WINDOWS_UWP
-                    Solid.Common.UniversalPlatformProvider
-#else
-                    Solid.Common.NetStandardPlatformProvider
-#endif
-                    ();
+               Solid.Common.PlatformProvider.Current = new Solid.Common.NetStandardPlatformProvider();
             }   
             _middlewaresWrapper = new MiddlewaresWrapper<IBootstrapper>(this);
             if (creationOptions.UseDefaultMiddlewares)

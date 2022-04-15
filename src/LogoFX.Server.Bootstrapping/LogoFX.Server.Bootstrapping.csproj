@@ -1,12 +1,12 @@
-<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk.Web">
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFramework>net6.0</TargetFramework>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
-    <Version>2.2.5</Version>
+    <Version>2.2.6</Version>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <OutputPath>..\Bin\netstandard\Release</OutputPath>
-    <DocumentationFile>..\Bin\netstandard\Release\LogoFX.Server.Bootstrapping.xml</DocumentationFile>
+    <OutputPath>..\Bin\net\Release</OutputPath>
+    <DocumentationFile>..\Bin\net\Release\LogoFX.Server.Bootstrapping.xml</DocumentationFile>
     <EmbedAllSources>True</EmbedAllSources>
     <DebugType>embedded</DebugType>
     <DebugSymbols>true</DebugSymbols>
@@ -15,12 +15,19 @@
     <DebugType>full</DebugType>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="3.1.3" />
-    <PackageReference Include="Solid.Bootstrapping" Version="2.3.3" />
-    <PackageReference Include="Solid.Common.Core" Version="2.3.3" />
-    <PackageReference Include="Solid.Extensibility" Version="2.3.3" />
-    <PackageReference Include="Solid.IoC.Registration" Version="2.3.3" />
-    <PackageReference Include="Solid.Practices.Composition.Core" Version="2.3.3" />
-    <PackageReference Include="Solid.Practices.Modularity" Version="2.3.3" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="6.0.0" />
+    <PackageReference Include="Solid.Bootstrapping" Version="2.3.5" />
+    <PackageReference Include="Solid.Common.Core" Version="2.3.5" />
+    <PackageReference Include="Solid.Extensibility" Version="2.3.5" />
+    <PackageReference Include="Solid.IoC.Registration" Version="2.3.5" />
+    <PackageReference Include="Solid.Practices.Composition.Core" Version="2.3.5" />
+    <PackageReference Include="Solid.Practices.Modularity" Version="2.3.5" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="6.2.3" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="6.2.3" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="6.2.3" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LogoFX.Server.IoC.Abstractions\LogoFX.Server.IoC.Abstractions.csproj" />
+    <ProjectReference Include="..\LogoFX.Server.IoC.Registration\LogoFX.Server.IoC.Registration.csproj" />
   </ItemGroup>
 </Project>

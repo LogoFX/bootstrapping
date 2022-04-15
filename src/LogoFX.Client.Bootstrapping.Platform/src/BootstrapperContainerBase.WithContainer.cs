@@ -1,12 +1,6 @@
 using System;
 using System.Collections.Generic;
 using LogoFX.Bootstrapping;
-#if (NET || NETCORE || NETFRAMEWORK) && !TEST
-#endif
-#if !TEST && (NETFX_CORE || WINDOWS_UWP)
-using Windows.ApplicationModel;
-using Windows.ApplicationModel.Activation;
-#endif
 using LogoFX.Client.Bootstrapping.Adapters.Contracts;
 using Solid.Extensibility;
 using Solid.Practices.IoC;

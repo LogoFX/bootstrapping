@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+	<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\LogoFX.Server.Bootstrapping\LogoFX.Server.Bootstrapping.csproj" />
+    <ProjectReference Include="..\LogoFX.Server.IoC.Registration.Specs.Application\LogoFX.Server.IoC.Registration.Specs.Application.csproj" />
+    <ProjectReference Include="..\LogoFX.Server.IoC.Registration.Specs.Domain\LogoFX.Server.IoC.Registration.Specs.Domain.csproj" />
+    <ProjectReference Include="..\LogoFX.Server.IoC.Registration.Specs.Infrastructure\LogoFX.Server.IoC.Registration.Specs.Infrastructure.csproj" />
+    <ProjectReference Include="..\LogoFX.Server.IoC.Registration\LogoFX.Server.IoC.Registration.csproj" />
+  </ItemGroup>
+
+</Project>

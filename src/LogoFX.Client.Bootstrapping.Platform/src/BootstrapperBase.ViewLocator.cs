@@ -1,12 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-#if NET || NETCORE || NETFRAMEWORK
 using System.Windows.Controls;
-#endif
-#if NETFX_CORE || WINDOWS_UWP
-using Windows.UI.Xaml.Controls;
-#endif
 using Caliburn.Micro;
 using LogoFX.Bootstrapping;
 using Solid.Practices.Middleware;
@@ -52,18 +47,9 @@ namespace LogoFX.Client.Bootstrapping
                 {
                     _typedic[viewTypeName] = viewType = (from assembly in bootstrapper.Assemblies
                                                          from type in assembly
-#if NET || NETCORE || NETFRAMEWORK
-                                                         .GetExportedTypes()
-#endif
-#if WINDOWS_UWP || NETFX_CORE
-                                                         .DefinedTypes
-#endif
+                                                             .GetExportedTypes()
                                                          where type.FullName == viewTypeName
-                                                         select type
-#if WINDOWS_UWP || NETFX_CORE
-                                                         .AsType()
-#endif
-                                                         ).FirstOrDefault();
+                                                         select type).FirstOrDefault();
                 }
 
                 return viewType;
