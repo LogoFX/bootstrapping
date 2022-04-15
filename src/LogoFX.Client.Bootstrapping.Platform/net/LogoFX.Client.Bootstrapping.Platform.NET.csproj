@@ -35,9 +35,9 @@
     <Compile Include="..\src\RegisterResolverMiddleware.cs" Link="RegisterResolverMiddleware.cs" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="LogoFX.Client.Core" Version="2.2.6-rc2" />
-    <PackageReference Include="LogoFX.Core" Version="2.2.6-rc2" />
-    <PackageReference Include="Solid.Common.Core" Version="2.3.4" />
+    <PackageReference Include="LogoFX.Client.Core" Version="2.2.6" />
+    <PackageReference Include="LogoFX.Core" Version="2.2.6" />
+    <PackageReference Include="Solid.Common.Core" Version="2.3.5" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\LogoFX.Bootstrapping.Middleware\LogoFX.Bootstrapping.Middleware.csproj" />

@@ -349,3 +349,6 @@ MigrationBackup/
 # Generated packages and intermediate output
 output
 devops/pack/**/contents/lib
+
+# SpecFlow generated files
+*.feature.cs

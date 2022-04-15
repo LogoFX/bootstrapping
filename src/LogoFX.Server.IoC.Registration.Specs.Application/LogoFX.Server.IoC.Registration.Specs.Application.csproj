@@ -7,8 +7,8 @@
   <ItemGroup>
     <PackageReference Include="JetBrains.Annotations" Version="2021.3.0" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="6.0.0" />
-    <PackageReference Include="Solid.IoC.Registration" Version="2.3.4" />
-    <PackageReference Include="Solid.Practices.Modularity" Version="2.3.4" />
+    <PackageReference Include="Solid.IoC.Registration" Version="2.3.5" />
+    <PackageReference Include="Solid.Practices.Modularity" Version="2.3.5" />
   </ItemGroup>
 
   <ItemGroup>
