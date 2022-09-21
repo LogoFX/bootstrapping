@@ -20,7 +20,7 @@
     <PackageReference Include="Solid.Practices.IoC" Version="2.3.6-rc1" />
     <PackageReference Include="Solid.Practices.Middleware" Version="2.3.6-rc1" />
     <PackageReference Include="Solid.Practices.Modularity" Version="2.3.6-rc1" />
-    <PackageReference Include="Xamarin.Forms" Version="4.5.0.396" />
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2515" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\LogoFX.Client.Bootstrapping.Adapters.Contracts\LogoFX.Client.Bootstrapping.Adapters.Contracts.csproj" />
