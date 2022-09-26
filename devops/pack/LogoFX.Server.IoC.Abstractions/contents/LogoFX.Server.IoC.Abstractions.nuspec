@@ -10,8 +10,8 @@
     <licenseUrl>https://github.com/LogoFX/bootstrapping/blob/main/LICENSE</licenseUrl>
     <projectUrl>https://github.com/LogoFX/bootstrapping</projectUrl>
     <iconUrl>https://github.com/LogoFX/logofx-assets/blob/master/icons/icon.png?raw=true</iconUrl>
-    <description>LogoFX Bootstrapping IoC Abstractions containing asbtractions for the most common use cases (interactor, repository, etc.).</description>
-    <summary>LogoFX Bootstrapping IoC Abstractions containing asbtractions for the most common use cases (interactor, repository, etc.)</summary>
+    <description>LogoFX Bootstrapping IoC Abstractions containing abstractions for the most common use cases (interactor, repository, etc.).</description>
+    <summary>LogoFX Bootstrapping IoC Abstractions containing abstractions for the most common use cases (interactor, repository, etc.)</summary>
     <releaseNotes>
     </releaseNotes>
     <dependencies>

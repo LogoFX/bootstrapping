@@ -12,8 +12,7 @@
     <iconUrl>https://github.com/LogoFX/logofx-assets/blob/master/icons/icon.png?raw=true</iconUrl>
     <description>LogoFX Client Bootstrapping containing base bootstrapper that performs several boilerplate tasks: modules registration, assemblies discovery using plugin framework via middlewares</description>
     <summary>LogoFX Client Bootstrapping containing base bootstrapper that performs several boilerplate tasks: modules registration, assemblies discovery.</summary>
-    <releaseNotes>1. Added ability to initialize explicitly.
-    2. Added more configuration options for root object registration.</releaseNotes>
+    <releaseNotes></releaseNotes>
     <dependencies>
       <group targetFramework=".NETFramework4.6.1">
         <dependency id="Solid.IoC.Registration" version="2.3.6-rc1" />
