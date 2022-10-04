@@ -6,11 +6,11 @@ mkdir net461
 robocopy ../../../../../src/Bin/netframework/Release net461 LogoFX.Client.Bootstrapping.Testing.* /E
 robocopy ../../../../../src/Bin/netframework/Release net461 Caliburn.Micro.* /E
 robocopy ../../../../../src/Bin/netframework/Release net461 System.Windows.Interactivity.dll /E
-mkdir net5.0
-robocopy ../../../../../src/Bin/net/Release net5.0 LogoFX.Client.Bootstrapping.Testing.* /E
-robocopy ../../../../../src/Bin/net/Release net5.0 Caliburn.Micro.* /E
-robocopy ../../../../../src/Bin/net/Release net5.0 System.Windows.Interactivity.dll /E
-cd net5.0
+mkdir net6.0
+robocopy ../../../../../src/Bin/net/Release net6.0 LogoFX.Client.Bootstrapping.Testing.* /E
+robocopy ../../../../../src/Bin/net/Release net6.0 Caliburn.Micro.* /E
+robocopy ../../../../../src/Bin/net/Release net6.0 System.Windows.Interactivity.dll /E
+cd net6.0
 rmdir /Q /S ref
 cd ..
 mkdir netcoreapp3.1

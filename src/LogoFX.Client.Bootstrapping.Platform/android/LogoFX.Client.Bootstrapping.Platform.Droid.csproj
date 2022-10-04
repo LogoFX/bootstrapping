@@ -15,7 +15,7 @@
     <AndroidResgenFile>Resources\Resource.Designer.cs</AndroidResgenFile>
     <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
     <AndroidUseLatestPlatformSdk>false</AndroidUseLatestPlatformSdk>
-    <TargetFrameworkVersion>v7.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v10.0</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -65,8 +65,8 @@
     <None Include="Resources\AboutResources.txt" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="LogoFX.Client.Core" Version="2.2.6" />
-    <PackageReference Include="Solid.Practices.IoC" Version="2.3.5" />
+    <PackageReference Include="LogoFX.Client.Core" Version="2.2.7-rc1" />
+    <PackageReference Include="Solid.Practices.IoC" Version="2.3.6-rc1" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\LogoFX.Client.Bootstrapping.Adapters.Contracts\LogoFX.Client.Bootstrapping.Adapters.Contracts.csproj">
