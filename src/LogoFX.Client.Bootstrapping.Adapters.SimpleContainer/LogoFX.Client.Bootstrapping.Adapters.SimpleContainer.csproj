@@ -12,8 +12,8 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="LogoFX.Practices.IoC" Version="2.2.7-rc1" />
-    <PackageReference Include="Solid.Practices.IoC" Version="2.3.6-rc1" />
+    <PackageReference Include="LogoFX.Practices.IoC" Version="2.2.7" />
+    <PackageReference Include="Solid.Practices.IoC" Version="2.3.6" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\LogoFX.Client.Bootstrapping.Adapters.Contracts\LogoFX.Client.Bootstrapping.Adapters.Contracts.csproj" />
