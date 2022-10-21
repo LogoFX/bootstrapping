@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
   <metadata>
     <id>LogoFX.Server.IoC.Abstractions</id>
-    <version>2.2.6</version>
+    <version>2.2.7</version>
     <title>LogoFX.Server.IoC.Abstractions</title>
     <authors>Gennady Verdel</authors>
     <owners>Gennady Verdel</owners>
@@ -10,8 +10,8 @@
     <licenseUrl>https://github.com/LogoFX/bootstrapping/blob/main/LICENSE</licenseUrl>
     <projectUrl>https://github.com/LogoFX/bootstrapping</projectUrl>
     <iconUrl>https://github.com/LogoFX/logofx-assets/blob/master/icons/icon.png?raw=true</iconUrl>
-    <description>LogoFX Bootstrapping IoC Abstractions containing asbtractions for the most common use cases (interactor, repository, etc.).</description>
-    <summary>LogoFX Bootstrapping IoC Abstractions containing asbtractions for the most common use cases (interactor, repository, etc.)</summary>
+    <description>LogoFX Bootstrapping IoC Abstractions containing abstractions for the most common use cases (interactor, repository, etc.).</description>
+    <summary>LogoFX Bootstrapping IoC Abstractions containing abstractions for the most common use cases (interactor, repository, etc.)</summary>
     <releaseNotes>
     </releaseNotes>
     <dependencies>
